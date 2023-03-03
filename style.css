@@ -13,7 +13,7 @@
     box-shadow: 0px 4px 40px rgb(0 0 0 / 9%);
     border: 1px solid #068ff727;;
     border-radius: 10px;
-    padding: 20px;
+    padding: 60px 40px;
 }
 
 .jobApplicationTitle {
@@ -42,11 +42,75 @@
     display: flex;
     flex-direction: column;
 }
-.textArea {
+textarea {
     width: 100%;
 }
 
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 15%);
+    border: 1px solid #068ff74e;
+    font-weight: bold;
+    color: #828282;
+    letter-spacing: 1.5px;
+    transition: all .3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus{
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 30%);
+    outline: #068ff7;
+    border: 1px solid #068ff7;
+}
+
+select>option {
+    font-weight: bold;
+    color: #828282;
+    letter-spacing: 1.5px;
+}
+
+
+.applicationButton {
+    text-align: end;
+}
+
+.applicationButton button {
+    background-color: #068ff7;
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 15%);
+    padding: 10px 40px;
+    margin: 40px 0 0 0;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.applicationButton button:hover {
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 30%);
+    transform: translateX(-10px);
+}
+
+
+
+
+
+
+
 @media (max-width: 670px) {
+    .jobApplicationSection {
+        padding: 20px 10px;
+    }
+    input, select, textarea {
+        width: 100%;
+    }
     .jobApplicationForm {
         grid-template-columns: repeat(1, 1fr);
     }
