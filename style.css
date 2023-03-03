@@ -1,0 +1,66 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.jobApplicationSection {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 9%);
+    border: 1px solid #068ff727;;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.jobApplicationTitle {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+.jobApplicationTitle h2 {
+    font-size: 28px;
+    color: #068FF7;
+    transition: all .5s ease-in-out;
+}
+.jobApplicationTitle:hover h2 {
+    letter-spacing: 3px;
+}
+
+
+.jobApplicationForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.applicationForm {
+    display: flex;
+    flex-direction: column;
+}
+.textArea {
+    width: 100%;
+}
+
+@media (max-width: 670px) {
+    .jobApplicationForm {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
